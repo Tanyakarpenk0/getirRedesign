@@ -14,6 +14,8 @@
 		4A09B95129262ED000B213F7 /* getirRedesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B95029262ED000B213F7 /* getirRedesignTests.swift */; };
 		4A09B95B29262ED000B213F7 /* getirRedesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B95A29262ED000B213F7 /* getirRedesignUITests.swift */; };
 		4A09B95D29262ED000B213F7 /* getirRedesignUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B95C29262ED000B213F7 /* getirRedesignUITestsLaunchTests.swift */; };
+		4A09B96B2926451B00B213F7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B96A2926451B00B213F7 /* Product.swift */; };
+		4A09B96E29264A3200B213F7 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B96D29264A3200B213F7 /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4A09B95629262ED000B213F7 /* getirRedesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getirRedesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A09B95A29262ED000B213F7 /* getirRedesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getirRedesignUITests.swift; sourceTree = "<group>"; };
 		4A09B95C29262ED000B213F7 /* getirRedesignUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getirRedesignUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A09B96A2926451B00B213F7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4A09B96D29264A3200B213F7 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				4A09B93F29262ECF00B213F7 /* getirRedesignApp.swift */,
 				4A09B94129262ECF00B213F7 /* ContentView.swift */,
+				4A09B96C292649E500B213F7 /* Components */,
+				4A09B969292644DB00B213F7 /* Models */,
 				4A09B94329262ED000B213F7 /* Assets.xcassets */,
 				4A09B94529262ED000B213F7 /* Preview Content */,
 			);
@@ -125,6 +131,22 @@
 				4A09B95C29262ED000B213F7 /* getirRedesignUITestsLaunchTests.swift */,
 			);
 			path = getirRedesignUITests;
+			sourceTree = "<group>";
+		};
+		4A09B969292644DB00B213F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A09B96A2926451B00B213F7 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A09B96C292649E500B213F7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4A09B96D29264A3200B213F7 /* ProductView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A09B96E29264A3200B213F7 /* ProductView.swift in Sources */,
 				4A09B94229262ECF00B213F7 /* ContentView.swift in Sources */,
 				4A09B94029262ECF00B213F7 /* getirRedesignApp.swift in Sources */,
+				4A09B96B2926451B00B213F7 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
