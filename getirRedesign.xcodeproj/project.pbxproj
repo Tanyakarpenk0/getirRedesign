@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4A09B93F29262ECF00B213F7 /* getirRedesignApp.swift */,
-				4A09B94129262ECF00B213F7 /* ContentView.swift */,
+				4A09B96F292BA28000B213F7 /* Views */,
 				4A09B96C292649E500B213F7 /* Components */,
 				4A09B969292644DB00B213F7 /* Models */,
 				4A09B94329262ED000B213F7 /* Assets.xcassets */,
@@ -147,6 +147,14 @@
 				4A09B96D29264A3200B213F7 /* ProductView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4A09B96F292BA28000B213F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A09B94129262ECF00B213F7 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    var columns = [GridItem(.adaptive(minimum: 100), spacing: 30)]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 2) {
+                ForEach(productList, id: \.id) { product in ProductView (product: product)
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

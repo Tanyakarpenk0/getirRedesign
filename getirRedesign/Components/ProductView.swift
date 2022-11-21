@@ -12,25 +12,41 @@ struct ProductView: View {
     
     var body: some View {
         
-        ZStack(alignment: .bottom){
-            RoundedRectangle(cornerRadius: 25, style: .continuous).foregroundColor(Color(UIColor(named: "Card")!))
-            
-            VStack {
-                Image(product.image)
-                    .resizable()
-                    .cornerRadius(20)
-                    .frame(width:105, height: 150)
-            
-                Text(product.name)
-                    .bold()
-                Text("\(product.price, specifier: "%.2f")$")
-                    .bold()
-                Text("\(product.volume)mL").font(.caption)
+        ZStack(alignment: .bottomLeading) {
+            ZStack(alignment: .center){
+                RoundedRectangle(cornerRadius: 25, style: .continuous).foregroundColor(Color(UIColor(named: "Card")!))
+                
+                VStack (alignment: .center) {
+                    Image(product.image)
+                        .resizable()
+                        .cornerRadius(20)
+                        .frame(width:100, height: 115)
+                        .padding()
+                  
+                  
+                        Text("\(product.price, specifier: "%.2f")$")
+                        .bold()
+                        Text(product.name)
+                        Text("\(product.volume)mL").font(.caption)
+                    
+                    Button {
+                        print("Added to cart!")
+                    } label: {
+                        Image(systemName: "plus")
+                            .padding(10)
+                            .foregroundColor(.black)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .padding(5)
+                    }
+                }
             }
-            .padding()
-            
         }
-        .frame(width:150, height:200)
+            
+        .padding()
+        .frame(width:150, height:300)
+        
+        }
     }
     
     struct ProductView_Previews: PreviewProvider {
@@ -38,4 +54,5 @@ struct ProductView: View {
             ProductView(product: productList[0])
         }
     }
-}
+    
+
