@@ -12,24 +12,25 @@ struct ProductView: View {
     
     var body: some View {
         
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .bottom){
             RoundedRectangle(cornerRadius: 25, style: .continuous).foregroundColor(Color(UIColor(named: "Card")!))
             
-            Image(product.image)
-                .resizable()
-                .cornerRadius(20)
-                .frame(width:105, height: 150)
+            VStack {
+                Image(product.image)
+                    .resizable()
+                    .cornerRadius(20)
+                    .frame(width:105, height: 150)
             
-            VStack(alignment: .leading) {
                 Text(product.name)
                     .bold()
-                Text("\(product.price)$")
-                    .font(.caption)
-                
+                Text("\(product.price, specifier: "%.2f")$")
+                    .bold()
+                Text("\(product.volume)mL").font(.caption)
             }
+            .padding()
             
         }
-        .frame(width:200, height:200)
+        .frame(width:150, height:200)
     }
     
     struct ProductView_Previews: PreviewProvider {
