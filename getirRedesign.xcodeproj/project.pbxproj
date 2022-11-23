@@ -18,6 +18,7 @@
 		4A09B96E29264A3200B213F7 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B96D29264A3200B213F7 /* ProductView.swift */; };
 		4A09B971292E9AD300B213F7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B970292E9AD300B213F7 /* SearchView.swift */; };
 		4A09B973292EAD8900B213F7 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B972292EAD8900B213F7 /* CartButton.swift */; };
+		4A09B975292EB59C00B213F7 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09B974292EB59C00B213F7 /* CartManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4A09B96D29264A3200B213F7 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		4A09B970292E9AD300B213F7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4A09B972292EAD8900B213F7 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		4A09B974292EB59C00B213F7 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4A09B93F29262ECF00B213F7 /* getirRedesignApp.swift */,
+				4A09B974292EB59C00B213F7 /* CartManager.swift */,
 				4A09B96F292BA28000B213F7 /* Views */,
 				4A09B96C292649E500B213F7 /* Components */,
 				4A09B969292644DB00B213F7 /* Models */,
@@ -295,6 +298,7 @@
 			files = (
 				4A09B971292E9AD300B213F7 /* SearchView.swift in Sources */,
 				4A09B96E29264A3200B213F7 /* ProductView.swift in Sources */,
+				4A09B975292EB59C00B213F7 /* CartManager.swift in Sources */,
 				4A09B94229262ECF00B213F7 /* ContentView.swift in Sources */,
 				4A09B94029262ECF00B213F7 /* getirRedesignApp.swift in Sources */,
 				4A09B96B2926451B00B213F7 /* Product.swift in Sources */,
