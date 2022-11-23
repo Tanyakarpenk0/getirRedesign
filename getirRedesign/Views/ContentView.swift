@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    var columns = [GridItem(.adaptive(minimum: 100), spacing: 30)]
+    var columns = [GridItem(.adaptive(minimum: 60), spacing: 50)]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 2) {
-                ForEach(productList, id: \.id) { product in ProductView (product: product)
+       NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 40) {
+                    ForEach(productList, id: \.id) { product in ProductView (product: product)
+                            .padding()
+                    }
                 }
+                .padding()
             }
-            .padding()
+            .navigationTitle(Text("Water and drinks"))
         }
     }
+     
 }
 
 struct ContentView_Previews: PreviewProvider {

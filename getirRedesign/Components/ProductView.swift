@@ -21,8 +21,7 @@ struct ProductView: View {
                         .resizable()
                         .cornerRadius(20)
                         .frame(width:100, height: 115)
-                        .padding()
-                  
+                        .padding(10)
                   
                         Text("\(product.price, specifier: "%.2f")$")
                         .bold()
@@ -36,15 +35,15 @@ struct ProductView: View {
                             .padding(10)
                             .foregroundColor(.black)
                             .background(.white)
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                             .padding(5)
                     }
                 }
             }
         }
             
-        .padding()
-        .frame(width:150, height:300)
+        .padding(40)
+        .frame(width:90, height:200)
         
         }
     }
